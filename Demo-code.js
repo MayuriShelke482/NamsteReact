@@ -9,7 +9,7 @@ root.appendChild(heading);
 // Demo2
 const headding1 = React.createElement("h1", {}, "hello my name is mayuri");
 const root1 = ReactDOM.createRoot(document.getElementById("root"));
-root.render(headding1);
+root.render(headding);
 
 
 
