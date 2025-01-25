@@ -1,0 +1,49 @@
+1.createElement():
+        1.syntax: document.createElement(type)
+        2.The createElement() method creates an element node.
+        3. here type is -  1.Required. 2.The type of element to create.
+        4. Node - The created element node.
+        5.Ex. const btn =   document.createElement("button");
+                            btn.innerHTML = "Hello Button";
+                            document.body.appendChild(btn);
+
+2.innerHTML : 
+                1. syntax: 1.element.innerHTML 2.element.innerHTML = text
+                2. String:	1.HTML content. 2.The HTML content of the element.
+                3.The innerHTML property sets or returns the HTML content (inner HTML) of an element.
+                4. EX. document.getElementById("demo").innerHTML = "I have changed!";
+
+3.getElementById() : 
+                1.method returns an element with a specified value.
+                2.method returns null if the element does not exist.
+                3.method is one of the most common methods in the HTML DOM. It is used almost every time you want to read or edit an HTML element.
+                4.syntax: document.getElementById(elementID);
+                5.Ex. document.getElementById("demo");
+                const myElement = document.getElementById("demo");
+                myElement.style.color = "red";
+
+4.appendChild(): 
+                1.The appendChild() method in JavaScript is used to add a new child node to the end of the list of children of a specified parent node. 
+                2.It is commonly used to dynamically add elements to the DOM (Document Object Model)
+                3.syntax:element.appendChild(node) or 
+                  node.appendChild(node)
+                4.  Ex. const node = document.createElement("li");
+                        const textnode = document.createTextNode("Water");
+                        node.appendChild(textnode);
+                        document.getElementById("myList").appendChild(node);
+
+5.render:       
+                1.Javascript rendering refers to the process of dynamically updating the content of a web page using JavaScript.
+                2.This process also known as client-side rendering, means that it generates Html content dynamically on the user's web browser.
+
+6.const headding = React.createElement("h1", 
+                                    {id:"frist", class:"may-be"},
+                                     "hello my name is mayuri");
+7.const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(headding);   
+
+                   in this code headding is Object;
+                   h1 is tag
+                   {id:"frist", class:"may-be"}, this is the atributes 
+                    ("hello my name is mayuri")                             = this two are chailed witch is coming inside the propes 
+8.propes:
